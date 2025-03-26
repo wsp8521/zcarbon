@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand" href="#">ZCarbon</a>
+            <a class="navbar-brand" href="{% url "home" %}">ZCarbon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,10 +18,13 @@
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url "diagnostics" %}">Faça seu diagnostico</a></li>
                 </ul>
+                <a class="btn btn-warning ms-3" href="{% url "home_admin" %}">Acessar sistema</a>
             </div>
         </div>
     </nav>
+    
     
     <header class="bg-success text-white text-center py-5">
         <div class="container">
